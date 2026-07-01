@@ -2,6 +2,9 @@
 
 @import "tailwindcss";
 
-@theme {
+@theme  {
   --font-manrope: "Manrope", sans-serif;
+
+  --color-primary: #9d94be;
+  --color-primary-hover: #7c739e;
 }

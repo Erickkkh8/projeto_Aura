@@ -51,7 +51,7 @@ export default function SideBar() {
       </nav>
 
         <div className="mt-auto px-6 pb-8">
-        <button className="w-full bg-primary text-white py-3 rounded-2xl font-medium transition-colors duration-300 hover:bg-primary-hover">
+        <button className="w-full bg-primary text-white py-3 rounded-2xl font-medium transition-colors duration-300 hover:bg-primary-hover cursor-pointer">
           Iniciar
         </button>
 

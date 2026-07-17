@@ -1,13 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { MdOutlineExplore, MdBarChart } from "react-icons/md";
 import { IoBookOutline, IoExitOutline, IoPerson } from "react-icons/io5";
 import { IoMdHelpCircleOutline } from "react-icons/io";
 import { useState } from "react";
 
 const nav_icons = [
-  { label: "Descobrir", icon: MdOutlineExplore },
-  { label: "Biblioteca", icon: IoBookOutline },
-  { label: "Atividade", icon: MdBarChart },
-  { label: "Comunidade", icon: IoPerson },
+  { label: "Descobrir", icon: MdOutlineExplore ,path: "/",},
+  { label: "Biblioteca", icon: IoBookOutline ,path: "/biblioteca"},
+  { label: "Atividade", icon: MdBarChart ,path: "/atividade"},
+  { label: "Comunidade", icon: IoPerson ,path: "/comunidade"},
 ];
 
 function NavItem ({label , Icon , active , onClick}){
@@ -26,6 +27,7 @@ function NavItem ({label , Icon , active , onClick}){
 
 export default function SideBar() {
   const [active , setActive] = useState("Descobrir");
+   const navigate = useNavigate();
   return (
     <aside className="flex flex-col top-0 left-0 h-screen fixed w-80 bg-white shadow-2xl">
       <div className="py-10 px-8">
@@ -36,14 +38,16 @@ export default function SideBar() {
       </div>
 
       <nav className="flex flex-col px-2" aria-label="Navegação principal">
-        {nav_icons.map(({label,icon})=>(
+        {nav_icons.map(({label,icon,path})=>(
           <NavItem
           key={label}
           label={label}
           Icon={icon}
           active={active===label}
-          onClick={()=> setActive(label)}
-
+           onClick={() => {
+           setActive(label);
+           navigate(path);
+}}
           />
         ))
 

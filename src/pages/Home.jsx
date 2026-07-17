@@ -66,7 +66,7 @@ export default function Home() {
          
       </div>
           
-      <h1 className="text-primary overflow-hidden mt-10 text-3xl font-bold"> Recomendado para você</h1>
+      <h1 className="text-primary  mt-10 text-3xl font-bold"> Recomendado para você</h1>
           <div className="flex flex-row gap-4 max-w-full mt-6 ">
     
               <img 

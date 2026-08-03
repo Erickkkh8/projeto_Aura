@@ -6,6 +6,7 @@ import Atividade from "../pages/Atividade";
 import Comunidade from "../pages/Comunidade";
 import Login from "../pages/Login";
 
+
 export default function AAppRoutes() {
   return (
     <BrowserRouter>

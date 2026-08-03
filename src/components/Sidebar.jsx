@@ -5,7 +5,7 @@ import { IoMdHelpCircleOutline } from "react-icons/io";
 import { useState } from "react";
 
 const nav_icons = [
-  { label: "Descobrir", icon: MdOutlineExplore ,path: "/",},
+  { label: "Descobrir", icon: MdOutlineExplore ,path: "/home",},
   { label: "Biblioteca", icon: IoBookOutline ,path: "/biblioteca"},
   { label: "Atividade", icon: MdBarChart ,path: "/atividade"},
   { label: "Comunidade", icon: IoPerson ,path: "/comunidade"},

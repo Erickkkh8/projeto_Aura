@@ -49,7 +49,7 @@ export default function Biblioteca() {
           </div>
           <div className="bg-neutral-300 lex flex-col items-start justify-end h-50 w-54 rounded-3xl p-8">
             <MdAir className="text-2xl text-neutral-500 mb-18 " />
-            <h1 className="flex text-lg font-semibold ">Anciedade</h1>
+            <h1 className="flex text-lg font-semibold ">Ansiedade</h1>
             <p className="flex text-xs text-neutral-500">
               12 sessôes * relaxamento
             </p>
